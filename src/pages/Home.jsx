@@ -14,7 +14,6 @@ const Home = () => {
 
   return (
     <main className="relative h-screen max-w-[1440px] grid grid-rows-[1fr_auto]">
-      {/* <img className="min-h-screen w-full object-cover bg-cover bg-center" src="./images/fondo.jpg" alt="" /> */}
 
       <section className="h-full flex flex-col justify-center items-center gap-8">
         <div>
