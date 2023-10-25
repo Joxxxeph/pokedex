@@ -8,13 +8,24 @@ const HeaderPokeball = ({handleChangeTheme, theme}) => {
         src="./images/pokeball.png"
         alt=""
       />
-      <button className="absolute right-0 -translate-x-[1.85rem] translate-y-[.5rem] md:right-0 md:-translate-x-[1rem] md:translate-y-[.8rem]" onClick={handleChangeTheme}>
-      {theme === "light" ? <IconMoon size={28}/> : <IconSun color="white" size={28}/>}
+      <button
+        className="absolute right-0 -translate-x-[1.85rem] translate-y-[.5rem] md:right-0 md:-translate-x-[1rem] md:translate-y-[.8rem]"
+        onClick={handleChangeTheme}
+      >
+        {theme === "light" ? (
+          <IconMoon size={28} />
+        ) : (
+          <IconSun color="white" size={28} />
+        )}
       </button>
 
       <div className="bg-[#DD1A1A] h-16">
         <div className="h-full pl-2 md:pl-12 ">
-        <img className=" h-[35px] md:h-full  md:w-auto translate-y-9 md:translate-y-4" src="/images/logopokedex.png" alt="" />
+          <img
+            className=" h-[35px] md:h-full  md:w-auto translate-y-9 md:translate-y-4"
+            src="/images/logopokedex.png"
+            alt=""
+          />
         </div>
       </div>
       <div className="bg-[#0C0C0C] h-10"></div>

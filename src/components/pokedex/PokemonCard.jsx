@@ -24,7 +24,7 @@ const PokemonCard = ({ pokemonUrl }) => {
       className={`capitalize border-8 ${borderByType[firstType]} w-[300px] grid place-items-center  rounded-lg overflow-hidden bg-white dark:bg-gray-400`}
     >
       <header className={`h-[150px] ${bgByType[firstType]} w-full`}></header>
-     <div className="relative pt-10 pb-5 ">
+      <div className="relative pt-10 pb-5 ">
         <div className="  grid gap-1 pb-3 place-items-center">
           <div className="absolute w-full top-0 -translate-y-[75%]">
             <img
@@ -33,7 +33,9 @@ const PokemonCard = ({ pokemonUrl }) => {
               alt=""
             />
           </div>
-          <h3 className={`${textByType[firstType]} text-3xl font-semibold`}>{pokemon?.name}</h3>
+          <h3 className={`${textByType[firstType]} text-3xl font-semibold`}>
+            {pokemon?.name}
+          </h3>
           <span className="text-[#4F4F4F] dark:text-white">{types}</span>
           <h5 className="text-[#9F9F9F] dark:text-white text-[.7rem]">type</h5>
         </div>
@@ -44,7 +46,9 @@ const PokemonCard = ({ pokemonUrl }) => {
               <h6 className="text-[#9F9F9F] dark:text-white text-[.7rem] text-center uppercase">
                 {stat.stat.name}
               </h6>
-              <span className={`${textByType[firstType]} flex justify-center text-[1.3rem]`}>
+              <span
+                className={`${textByType[firstType]} flex justify-center text-[1.3rem]`}
+              >
                 {stat.base_stat}
               </span>
             </li>

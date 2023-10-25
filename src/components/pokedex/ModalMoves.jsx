@@ -22,9 +22,11 @@ const ModalMoves = ({ isShowModal, handleClosedModal, }) => {
         isShowModal ? "visible opacity-100" : "invisible opacity-0"
       }`}
     >
-      <article className="drop-shadow-2xl dark:bg-gray-400 bg-white p-4 rounded-md grid gap-3 
+      <article
+        className="drop-shadow-2xl dark:bg-gray-400 bg-white p-4 rounded-md grid gap-3 
         w-[300px] sm:w-[650px] h-[700px] overflow-y-scroll 
-        relative">
+        relative"
+      >
         <button
           onClick={handleClosedModal}
           type="button"
@@ -35,14 +37,13 @@ const ModalMoves = ({ isShowModal, handleClosedModal, }) => {
         </button>
         <h2 className="text-[1.8rem] font-semiboldaaaa">Moves</h2>
         <div className=" py-4 grid grid-cols-[repeat(auto-fit,_150px)] gap-4 place-content-center">
-            
           {pokemon?.moves.map((move) => (
             <div
               key={move.move.name}
               className=" flex justify-center items-center  dark:bg-gray-500 bg-gray-300 rounded-md w-full h-[2rem]"
             >
               <span className="font-semibold text-[#302F2F] dark:text-white ">
-                {move.move.name} 
+                {move.move.name}
               </span>
             </div>
           ))}

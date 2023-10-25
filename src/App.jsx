@@ -7,13 +7,10 @@ import Pokedex from "./pages/Pokedex";
 
 
 function App() {
-
-  
-
   return (
     <div className="font-['Lato'] h-screen">
       <div className="min-h-screen fontt px-2 fixed min-w-full duration-500 dark:brightness-[.30]"></div>
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
 

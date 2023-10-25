@@ -57,7 +57,7 @@ const handleChangeTheme = () => {
 
   return (
     <main className="relative text-center capitalize">
-      <HeaderPokeball handleChangeTheme={handleChangeTheme} theme={theme}/>
+      <HeaderPokeball handleChangeTheme={handleChangeTheme} theme={theme} />
       <article className="rounded-md overflow-hidden max-w-[700px] relative mx-auto pt-[6rem] pb-[6rem] px-2">
         <header
           className={`rounded-t-md h-[130px] ${bgByType[firstType]} w-full`}
@@ -96,7 +96,9 @@ const handleChangeTheme = () => {
           <div className="flex flex-col justify-center ">
             <div className="grid grid-cols-2 justify-center gap-2 px-8">
               <div>
-                <h5 className="text-[21px] dark:text-white text-[#302F2F] pt-2 pb-4">Type</h5>
+                <h5 className="text-[21px] dark:text-white text-[#302F2F] pt-2 pb-4">
+                  Type
+                </h5>
               </div>
               <div className="">
                 <h5 className="text-[21px] dark:text-white text-[#302F2F] pt-2 pb-4">
@@ -122,7 +124,9 @@ const handleChangeTheme = () => {
                   key={ability.ability.name}
                   className="border-2 flex justify-center items-center dark:border-white border-gray-500 rounded-md w-[99%] h-[90%]"
                 >
-                  <span className={` font-semibold dark:text-white text-[#302F2F]`}>
+                  <span
+                    className={` font-semibold dark:text-white text-[#302F2F]`}
+                  >
                     {ability.ability.name}
                   </span>
                 </div>
